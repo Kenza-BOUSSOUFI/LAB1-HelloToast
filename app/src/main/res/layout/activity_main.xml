@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#E1BEE7">
+
+    <!-- Titre en haut -->
+    <TextView
+        android:id="@+id/title_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon Compteur App"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Bouton Toast -->
+    <Button
+        android:id="@+id/btn_show_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afficher Toast"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Compteur AU MILIEU -->
+    <TextView
+        android:id="@+id/value_counter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="#4A148C" />
+
+    <!-- Bouton en bas -->
+    <Button
+        android:id="@+id/btn_increment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter +1"
+        android:padding="12dp" />
+
+</LinearLayout>
